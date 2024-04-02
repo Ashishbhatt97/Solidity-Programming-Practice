@@ -1,13 +1,12 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.24;
+pragma solidity 0.8.25;
 
 import "contracts/SimpleStorage.sol";
 
-contract Store is SimpleStorage{
+contract Store is SimpleStorage {
+    string public name = "Ashibhatt";
 
-        string public name = "Ashibhatt";
-
-        function StoreNumber(string memory _newName) public  {
-            name = _newName;
-        }
+    function StoreNumber(string memory _newName) public {
+        name = _newName;
+    }
 }
